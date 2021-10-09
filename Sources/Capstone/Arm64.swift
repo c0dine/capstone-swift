@@ -65,10 +65,10 @@ extension Arm64Instruction: OperandContainer {
             optionalEnumCast(op.vas, ignoring: ARM64_VAS_INVALID)
         }
 
-        /// Vector Element Size Specifier
-        public var vectorElementSizeSpecifier: Arm64Vess! {
-            optionalEnumCast(op.vess, ignoring: ARM64_VESS_INVALID)
-        }
+//        /// Vector Element Size Specifier
+//        public var vectorElementSizeSpecifier: Arm64Vess! {
+//            optionalEnumCast(op.v, ignoring: Arm64Vess.invalid)
+//        }
 
         /// Shift for this operand.
         ///

@@ -253,9 +253,9 @@ extension Arm64Instruction: InstructionDetailsPrintable {
                 print("\t\t\tVector Arrangement Specifier: 0x\(hex(vas.rawValue))")
             }
 
-            if let vess = op.vectorElementSizeSpecifier {
-                print("\t\t\tVector Element Size Specifier: \(vess.rawValue)")
-            }
+//            if let vess = op.vectorElementSizeSpecifier {
+//                print("\t\t\tVector Element Size Specifier: \(vess.rawValue)")
+//            }
 
             if let vectorIndex = op.vectorIndex {
                 print("\t\t\tVector Index: \(vectorIndex)")
