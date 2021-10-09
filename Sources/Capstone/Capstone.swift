@@ -35,7 +35,7 @@ public class Capstone {
         }
 
         var h: csh = 0
-        let err = cs_open(cs_arch(arch.rawValue), cs_mode(mode.rawValue), &h)
+        let err = cs_open(cs_arch(arch.rawValue), cs_mode(Int32(mode.rawValue)), &h)
         guard err == CS_ERR_OK else {
             throw CapstoneError(err)
         }

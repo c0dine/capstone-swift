@@ -13,7 +13,7 @@ public struct Mode: OptionSet {
     }
 
     private init(_ modeValue: cs_mode) {
-        self.init(rawValue: modeValue.rawValue)
+        self.init(rawValue: UInt32(modeValue.rawValue))
     }
 
     /// Endianness modes
